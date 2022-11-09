@@ -58,18 +58,17 @@ int main()
 
     }*/
 
-    //3.14(nie działa poprawnie nie wiem o co w tym chodzi lol lmao no cap)
-    /*int i,suma;
+    /*//3.14
+    int i,suma;
     i=1000;
     suma=0;
     while(i<=5000){
         if (i%5==0 or i%9==0){
             suma=suma+i;
-            cout<<suma<<endl;
         }
-
-    }*/
-
+    i++;
+    }
+    cout<<suma<<endl;*/
 
 
 
