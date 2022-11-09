@@ -1,0 +1,76 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+
+using namespace std;
+
+int main()
+{
+    /*//3.10
+    int a=0;
+    for (int i=0;i<1000000;i++){
+        if (rand()%101==100){
+            a++;
+        }
+    }
+    cout<<"liczb rownych 100: "<<a<<endl;*/
+
+    //3.11
+    /*int x,suma;
+    suma=0;
+    while(x!=0){
+
+        cin>>x;
+        suma=suma + x;
+        cout<<"suma wynosi: "<<suma<<endl;
+
+
+    }*/
+
+    //3.12
+    /*int n,silnia;
+    silnia=0;
+    cin>>n;
+
+    if (n>0){silnia=n*(n-1);}
+    if (n==0){silnia=1;}
+    cout<<"silnia dla liczby n = "<<n<<" wynosi: "<<silnia<<endl;
+    if (n<0){cout<<"BLAD!! n<0"<<endl;}*/
+
+    //3.13
+    /*int n,i,suma,iloczyn;
+    suma=0;
+    iloczyn=1;
+    i=1;
+    cout<<"podaj n: ";
+    cin>>n;
+
+    while(i<n){
+        int x;
+        cout<<"podaj x: ";
+        cin>>x;
+
+        suma=suma + x;
+        iloczyn=iloczyn * x;
+        cout<<"suma wynosi: "<<suma<<endl;
+        cout<<"iloczyn wynosi: "<<iloczyn<<endl;
+        i++;
+
+    }*/
+
+    //3.14(nie działa poprawnie nie wiem o co w tym chodzi lol lmao no cap)
+    /*int i,suma;
+    i=1000;
+    suma=0;
+    while(i<=5000){
+        if (i%5==0 or i%9==0){
+            suma=suma+i;
+            cout<<suma<<endl;
+        }
+
+    }*/
+
+
+
+
+}
