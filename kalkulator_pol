@@ -1,0 +1,63 @@
+#include <iostream>
+
+using namespace std;
+
+double poleTrojkata(double,double);
+double poleProstokata(double,double);
+double poleTrapezu(double,double,double);
+
+int main()
+{
+int wybor=0,bokT=0,wysT=0,bokP=0,wysP=0,wysTp=0,bokTp1=0,bokTp2=0;
+cout<<"Wybierz co chcesz policzyc: "<<endl<<"Legenda: "<<endl<<"1=Pole Trojkata,2=Pole czworokata,3=Pole trapezu"<<endl;
+cin>>wybor;
+
+if (wybor == 1)
+    {
+        cout<<"Wybrales pole trojkata"<<endl;
+        cout<<"Podaj wysokosc i podstawe:"<<endl;
+        cin>>wysT>>bokT;
+        cout<<"Podane dane wynosza: "<<endl<<"Wysokosc  = "<<wysT<<endl<<"Podstawa = "<<bokT<<endl;
+        cout<<"Pole trojkata wynosi = "<<poleTrojkata(bokT,wysT)<<endl;
+
+
+    }
+else if (wybor == 2)
+    {
+        cout<<"Wybrales pole czworokata"<<endl;
+        cout<<"Podaj wysokosc i podstawe:"<<endl;
+        cin>>wysP>>bokP;
+        cout<<"Podane dane wynosza: "<<endl<<"Wysokosc  = "<<wysP<<endl<<"Podstawa = "<<bokP<<endl;
+        cout<<"Pole prostokata wynosi = "<<poleProstokata(bokP,wysP)<<endl;
+    }
+else if (wybor == 3)
+    {
+        cout<<"Wybrales pole trapezu"<<endl;
+        cout<<"Podaj wysokosc i dwie podstawy:"<<endl;
+        cin>>wysTp>>bokTp1>>bokTp2;
+        cout<<"Podane dane wynosza: "<<endl<<"Wysokosc  = "<<wysTp<<endl<<"Podstawy: "<<endl<<"pierwsza podstawa = "<<bokTp1<<",druga postawa = "<<bokTp2<<endl;
+        cout<<"Pole trapezu wynosi = "<<poleTrapezu(bokTp1,bokTp2,wysTp)<<endl;
+
+    }
+}
+
+
+
+
+double poleTrojkata(double a, double h)
+{
+    return (a * h)/2;
+
+}
+
+double poleProstokata(double a,double h)
+{
+    return a * h;
+
+}
+
+double poleTrapezu(double a,double b, double h)
+{
+    return (a + b)*h;
+
+}
